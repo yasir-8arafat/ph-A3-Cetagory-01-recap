@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your PET SHOP</title>
+    <title>PH PET SHOP</title>
     <!-- Google Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +24,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        cmnYellow: '#FFDC26',
                     },
                     fontFamily: {
                         soraFont: ['Sora', 'sans-serif'],
@@ -36,7 +37,51 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <nav class="font-soraFont bg-orange-50 border-b-2 border-black lg:border-none">
+            <div class="navbar container mx-auto">
+                <div class="navbar-start">
+                    <div class="flex items-center gap-3">
+                        <div class="max-w-14">
+                            <img class="w-full" src="c1-assets/logo-header.png" alt="">
+                        </div>
+                        <h4 class="text-[26px] font-normal text-[#111111] hidden sm:block">Browse<span
+                                class="text-cmnYellow">4</span>Pets</h4>
+                    </div>
+                </div>
+                <div class="hidden lg:flex xl:flex-shrink-0">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-xl font-normal text-[#111111]">Find a pet</a></li>
+                        <li><a class="text-xl font-normal text-[#111111]">Breeds</a></li>
+                        <li><a class="text-xl font-normal text-[#111111]">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="dropdown dropdown-bottom dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden p-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a class="text-xl font-normal text-[#111111]">Find a pet</a></li>
+                            <li><a class="text-xl font-normal text-[#111111]">Breeds</a></li>
+                            <li><a class="text-xl font-normal text-[#111111]">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="hidden lg:block lg:flex lg:gap-4 items-center">
+                        <i class="fa-solid fa-bell fa-2xl"></i>
+                        <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                        <a class="btn text-xl font-normal text-[#111111] border-2 border-[#FFDC26]">Login</a>
+                        <a class="btn text-xl font-normal text-[#111111] border-2 border-[#FFDC26] bg-cmnYellow">Register</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main></main>
     <footer></footer>
 </body>
